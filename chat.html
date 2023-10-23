@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ 쏜 - Kokoa Talk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fa-solid fa-chevron-left"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">쏜</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Sunday, October 22, 2023</div>
+
+      <div class="message-row">
+        <img src="img/jwick.jpeg" alt="" />
+        <div class="message-row__content">
+          <span class="message__author">Hyodai</span>
+          <div class="message__body">
+            <span class="message__bubble">Hey</span>
+            <span class="message__timestamp">12:03</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--sent">
+        <div class="message-row__content">
+          <div class="message__body">
+            <span class="message__bubble">Hey, what's up?</span>
+            <span class="message__timestamp">12:03</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="input-box">
+        <div class="input-box__column">
+          <button><i class="fa-regular fa-square-plus"></i></button>
+        </div>
+        <div class="input-box__column">
+          <input type="text" placeholder="Write your message..." />
+          <div class="input-box__emoji">
+            <span><i class="fa-regular fa-face-smile"></i></span>
+          </div>
+          <button class="input-box__send">
+            <span><i class="fa-solid fa-arrow-up"></i></span>
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/01ba7dce51.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

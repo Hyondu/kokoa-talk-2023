@@ -1,0 +1,14 @@
+.v-division {
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-right: 7px;
+}
+.h-division {
+  position: absolute;
+  left: -10%;
+  width: 110%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 15px 0;
+}

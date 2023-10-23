@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-header.css";
+@import "components/divison.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2e363e;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.main-screen {
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 var(--horizontal-space);
+}
+
+@keyframes headerCogRotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header .fa-cog:hover {
+  animation: headerCogRotate 1s linear infinite;
+}
